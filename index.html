@@ -40,6 +40,7 @@ Select ONE Additional Feature to Add
     </form>
     <div id="movie-result">
       <p id="movie-text"></p>
+      <img id="movie-pic">
     </div>
     <hr />
     <!-- Book Question -->
@@ -64,12 +65,13 @@ Select ONE Additional Feature to Add
       //========================Movie Question jQuery Code
       $("#movie-form").on("submit", function (event) {
         event.preventDefault();
-
+   $("#movie-pic").hide()
         var $answer = $("#movie-answer");
         var answer = $answer.val();
 
         if (answer === "movie3") {
-          $("#movie-text").text("YESSSS!");
+          $("#movie-text").text("Got it!"); 
+          $("#movie-pic").attr("src","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxqHm3Xiu2DC8JSf22-R5pSZxq8olITsqwcw&s").show(1000)
         } 
          if (answer === "movie4") {
           $("#movie-text").text("Close!");}
