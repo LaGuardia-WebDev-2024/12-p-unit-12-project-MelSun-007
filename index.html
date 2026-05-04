@@ -46,12 +46,12 @@ Select ONE Additional Feature to Add
     <!-- Book Question -->
     <form id="book-form">
       <label>
-        W
+        my favorite art medium 
         <select id="book-answer">
-          <option value="book1">book 1</option>
-          <option value="book2">book 2</option>
-          <option value="book3">book 3</option>
-          <option value="book4">book 4</option>
+          <option value="book1">Oil paint</option>
+          <option value="book2">Sculpture</option>
+          <option value="book3">ceramics</option>
+          <option value="book4">print</option>
         </select>
       </label>
       <button type="submit">Check Book Answer</button>
@@ -74,12 +74,15 @@ Select ONE Additional Feature to Add
           $("#movie-pic").attr("src","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxqHm3Xiu2DC8JSf22-R5pSZxq8olITsqwcw&s").show(1000)
         } 
          if (answer === "movie4") {
-          $("#movie-text").text("Close!");}
+          $("#movie-text").text("Close!");
+          $("#movie-pic").attr("src","https://upload.wikimedia.org/wikipedia/en/5/52/Meet_the_Beatles.jpg").show(1000)}
         if (answer === "movie1"){
           $("#movie-text").text("Not quite");
+          $("#movie-pic").attr("src","https://upload.wikimedia.org/wikipedia/en/2/23/BostonBoston.jpg").show(1000)
         }
         if (answer === "movie2"){
           $("#movie-text").text("Try Again!");
+          $("#movie-pic").attr("src","https://upload.wikimedia.org/wikipedia/en/0/0f/Radiohead.pablohoney.albumart.jpg").show(1000)
         }
       });
 
@@ -91,10 +94,11 @@ Select ONE Additional Feature to Add
         var answer = $answer.val();
 
         if (answer === "book1") {
-          $("#book-text").text("YESSSS!");
+          $("#book-text").text("Yep");
+           $("#movie-pic").attr("https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Caravaggio_-_La_vocazione_di_San_Matteo.jpg/1280px-Caravaggio_-_La_vocazione_di_San_Matteo.jpg").show(1000)
         }   
         else {
-          $("#book-text").text("Try Again!");
+          $("#book-text").text("I enjoy it");
         }
       });
       
